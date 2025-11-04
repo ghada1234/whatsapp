@@ -10,7 +10,8 @@
     "chart.js": "^4.4.0",
     "react-chartjs-2": "^5.2.0",
     "lucide-react": "^0.294.0",
-    "date-fns": "^2.30.0"
+    "date-fns": "^2.30.0",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,9 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "react-scripts": "5.0.1"
   },
   "proxy": "http://localhost:3000"
 }
