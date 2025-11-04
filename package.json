@@ -1,0 +1,43 @@
+{
+  "name": "whatsapp-business-automation",
+  "version": "1.0.0",
+  "description": "WhatsApp Business API Integration with Flow Automation",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "scheduler": "node src/services/scheduler.js",
+    "migrate": "node src/database/migrate.js",
+    "seed": "node src/database/seed.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "business-api",
+    "automation",
+    "messaging"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "multer": "^1.4.5-lts.1",
+    "csv-parser": "^3.0.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "node-cron": "^3.0.3",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.4",
+    "razorpay": "^2.9.2",
+    "stripe": "^14.9.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
+
