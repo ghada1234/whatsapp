@@ -1,22 +1,20 @@
-[[build]]
+[build]
   publish = "build"
   command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-[build.environment]
-  NODE_VERSION = "18"
-
-# API proxy - point to your backend server
 [[redirects]]
   from = "/api/*"
   to = "https://your-backend-api.herokuapp.com/api/:splat"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
 
 [[redirects]]
   from = "/webhook"
